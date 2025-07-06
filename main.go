@@ -20,6 +20,18 @@ func divide(a, b int) (int, int) {
 	return a / b, a % b // 몫과 나머지 반환
 }
 
+// naked function
+func subtract(a, b int) (result int) {
+	result = a - b
+	return
+}
+
+// defer 문법을 사용한 예시
+func printWithDefer() {
+	defer fmt.Println("This is printed last (deferred)")
+	fmt.Println("This is printed first")
+}
+
 func main() {
 	fmt.Println("Add:", add(3, 5))           // Add: 8
 	fmt.Println("Multiply:", multiply(4, 6)) // Multiply: 24
@@ -35,4 +47,8 @@ func main() {
 	// 나머지값은 무시하고자 할 때
 	q, _ = divide(10, 3)
 	fmt.Println("Divide ignoring remainder:", q) // Divide ignoring remainder: 3
+
+	fmt.Println("Subtract with naked return:", subtract(10, 4)) // Subtract with naked return: 6
+
+	printWithDefer() // This will demonstrate the defer behavior
 }
