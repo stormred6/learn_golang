@@ -5,6 +5,7 @@ import (
 	"study/learn_golang/learn_functions"
 	"study/learn_golang/learn_ifelse"
 	"study/learn_golang/learn_loop"
+	"study/learn_golang/learn_pointer"
 )
 
 func main() {
@@ -36,4 +37,11 @@ func main() {
 
 	learn_ifelse.CheckNumber(10) // 10 is even
 	learn_ifelse.CheckNumber(7)  // 7 is odd
+
+	learn_pointer.Swap(&nums[0], &nums[1]) // Swap first two elements
+	fmt.Println("After Swap:", nums)       // After Swap: [2 1 3 4 5]
+
+	learn_pointer.SetToZero(&nums[0])     // Set first element to zero
+	fmt.Println("After SetToZero:", nums) // After SetToZero: [0 1 3 4 5]
+
 }
