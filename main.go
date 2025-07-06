@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"study/learn_golang/learn_functions"
+	"study/learn_golang/learn_loop"
 )
 
 func main() {
@@ -24,4 +25,11 @@ func main() {
 	fmt.Println("Subtract with naked return:", learn_functions.Subtract(10, 4)) // Subtract with naked return: 6
 
 	learn_functions.PrintWithDefer() // This will demonstrate the defer behavior
+
+	learn_loop.PrintNumbers(5)                       // Print numbers from 1 to 5
+	learn_loop.PrintIndexAndValue([]int{10, 20, 30}) // Print index and value of slice elements
+	nums := []int{1, 2, 3, 4, 5}
+	sum := learn_loop.SumSlice(nums)  // Sum of slice elements
+	fmt.Println("Sum of slice:", sum) // Sum of slice: 15
+	learn_loop.WhileLikeLoop(3)       // Demonstrate while-like loop behavior
 }
