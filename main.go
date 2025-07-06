@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"study/learn_golang/learn_functions"
+	"study/learn_golang/learn_ifelse"
 	"study/learn_golang/learn_loop"
 )
 
@@ -32,4 +33,7 @@ func main() {
 	sum := learn_loop.SumSlice(nums)  // Sum of slice elements
 	fmt.Println("Sum of slice:", sum) // Sum of slice: 15
 	learn_loop.WhileLikeLoop(3)       // Demonstrate while-like loop behavior
+
+	learn_ifelse.CheckNumber(10) // 10 is even
+	learn_ifelse.CheckNumber(7)  // 7 is odd
 }
