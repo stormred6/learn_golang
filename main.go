@@ -48,5 +48,14 @@ func main() {
 	fmt.Println("Names:", names) // Names: [test1 test2 test3]
 
 	slice := []string{"apple", "banana", "cherry"}
-	fmt.Println("Slice:", slice) // Slice: [apple banana cherry]
+	fmt.Println("Slice:", slice)              // Slice: [apple banana cherry]
+	slice = append(slice, "date")             // Append to slice
+	fmt.Println("Slice after append:", slice) // Slice after append: [apple banana cherry date
+
+	nico := map[string]int{"age": 30, "height": 175}
+	fmt.Println("Nico:", nico) // Nico: map[age:30 height:175]
+
+	for key, value := range nico {
+		fmt.Printf("Key: %s, Value: %d\n", key, value) // Key: age, Value: 30
+	}
 }
