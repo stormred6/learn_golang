@@ -44,4 +44,9 @@ func main() {
 	learn_pointer.SetToZero(&nums[0])     // Set first element to zero
 	fmt.Println("After SetToZero:", nums) // After SetToZero: [0 1 3 4 5]
 
+	names := [5]string{"test1", "test2", "test3"}
+	fmt.Println("Names:", names) // Names: [test1 test2 test3]
+
+	slice := []string{"apple", "banana", "cherry"}
+	fmt.Println("Slice:", slice) // Slice: [apple banana cherry]
 }
