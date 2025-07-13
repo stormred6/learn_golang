@@ -1,3 +1,3 @@
-module study/learn_golang
+module learn_golang
 
 go 1.24.4

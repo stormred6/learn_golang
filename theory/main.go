@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"study/learn_golang/learn_functions"
-	"study/learn_golang/learn_ifelse"
-	"study/learn_golang/learn_loop"
-	"study/learn_golang/learn_pointer"
+	"learn_golang/learn_functions"
+	"learn_golang/learn_ifelse"
+	"learn_golang/learn_loop"
+	"learn_golang/learn_pointer"
 )
 
 type Person struct {
