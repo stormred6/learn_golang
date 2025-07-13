@@ -8,6 +8,11 @@ import (
 	"study/learn_golang/learn_pointer"
 )
 
+type Person struct {
+	Name string
+	Age  int
+}
+
 func main() {
 	fmt.Println("Add:", learn_functions.Add(3, 5))           // Add: 8
 	fmt.Println("Multiply:", learn_functions.Multiply(4, 6)) // Multiply: 24
@@ -58,4 +63,9 @@ func main() {
 	for key, value := range nico {
 		fmt.Printf("Key: %s, Value: %d\n", key, value) // Key: age, Value: 30
 	}
+
+	youngshin := Person{Name: "Youngshin", Age: 39}
+	fmt.Printf("Person: Name=%s, Age=%d\n", youngshin.Name, youngshin.Age) // Person: Name=Youngshin, Age=39
+	teayang := Person{"teayang", 39}
+	fmt.Printf("Person: Name=%s, Age=%d\n", teayang.Name, teayang.Age) // Person: Name=teayang, Age=39}
 }
