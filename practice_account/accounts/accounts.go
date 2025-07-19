@@ -52,3 +52,11 @@ func (a *Account) Owner() string {
 func (a *Account) String() string {
 	return a.Owner() + "'s account" + " has a balance of " + fmt.Sprintf("%d", a.Balance())
 }
+
+// chagne owner 함수는 계좌 소유자를 변경합니다.
+func (a *Account) ChangeOwner(newOwner string) {
+	if newOwner == "" {
+		return // 빈 문자열은 허용하지 않습니다.
+	}
+	a.owner = newOwner
+}
